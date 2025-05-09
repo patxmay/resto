@@ -1,7 +1,3 @@
-
-Question : 
-projet resto : je souhaite développer en php avec la methode mvc le programme dont le cahier des charges est fourni en piece jointe; peux tu me donner les classes de Models 
-
 Le site rest0.fr est de construire une base d'un grand nombre de restaurants, de stocker leurs caractéristiques, de recueillir les avis des consommateurs, et de diffuser ces informations aux visiteurs pour leur permettre de mieux choisir où manger.
 Deux types d'utilisateurs ont accès au site : les visiteurs, et les utilisateurs authentifiés.
 
