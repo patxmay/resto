@@ -1,0 +1,53 @@
+
+Question : 
+projet resto : je souhaite développer en php avec la methode mvc le programme dont le cahier des charges est fourni en piece jointe; peux tu me donner les classes de Models 
+
+Le site rest0.fr est de construire une base d'un grand nombre de restaurants, de stocker leurs caractéristiques, de recueillir les avis des consommateurs, et de diffuser ces informations aux visiteurs pour leur permettre de mieux choisir où manger.
+Deux types d'utilisateurs ont accès au site : les visiteurs, et les utilisateurs authentifiés.
+
+Visiteur : En tant que visiteur non authentifié, l’utilisateur a accès à :
+-un module de recherche lui permettant de trouver des restaurants par nom, adresse, type de cuisine, et multi-critères
+-un module d'inscription
+-Le visiteur a aussi accès sur la fiche d’un restaurant aux caractéristiques du restaurant,types de cuisine servis etévaluations laissées par les utilisateurs enregistrés.
+
+Utilisateur authentifié : Un visiteur enregistré a accès à plus de fonctionnalités, et peut personnaliser son profil choisir ses types de cuisine préférés,
+-aimer des restaurants,
+-noter des restaurants,
+-critiquer des restaurants.
+
+
+De nouveaux contrôleurs doivent être créés pour permettre les fonctions de modération : lorsque les utilisateurs postent des critiques sur les restaurants, ces dernières ne doivent pas être affichées directement sur le site. 
+Avant toute chose, ils doivent passer par une phase de modération. 
+Les modérateurs peuvent ainsi accéder par une interface spécifique aux critiques à modérer.
+Dans cette interface, ils peuvent lister les critiques non modérées, les valider, ou les passer en état non valide.
+Une critique peut ainsi être dans 3 états :
+-Non modéré
+-Validé
+-Invalide
+Une page spéciale "modération" permet d'accéder à ces fonctionnalités. 
+Cette page n'est accessible que si on est connecté sur le site.
+
+Sur la page profil de l'utilisateur connecté, la liste des critiques émises par l'utilisateur est affichée. 
+3 listes sont affichées permettant à l'utilisateur de savoir si les critiques sont 
+-"non modérées", 
+-"validées" ou 
+-"invalides".
+
+Une critique non modérée ou invalide peut toujours être modifiable par l'utilisateur qui l'a émise. 
+Par contre, une critique validée ne peut plus être modifiée par l'utilisateur. 
+
+Sur la page mon profil est visible la liste des restaurants que l'utilisateur connecté aime. Il faudrait que l'affichage soit fait sous forme de cartes pour chaque restaurant et que cette carte contienne 
+-la 1ere photo de chaque restaurant, 
+-son nom et 
+-son adresse. 
+Le nom du restaurant est toujours un lien vers la fiche de ce dernier.
+Les utilisateurs peuvent compléter leurs profils en indiquant leurs informations personnelles :
+-Adresse postale (rue, ville, code postal)
+-Numéro de téléphone
+Ils peuvent aussi donner leur accord pour être contactés par des restaurants à proximité de chez eux.
+
+Dans la recherche de restaurant par nom, on souhaite proposer à l'utilisateur de cocher une case lui permettant de dire si la recherche est approximative ou non.
+Une nouvelle option de recherche doit être disponible : les utilisateurs du site souhaitent pouvoir rechercher un restaurant par adresse et par tranche de note. Ainsi ils pourront choisir de chercher un restaurant à Bayonne ayant une note comprise entre 4 et 5.
+
+Pour favoriser l'accessibilité des personnes malvoyantes, on souhaite avoir accès à un descriptif des photographies des restaurants. Ce descriptif doit apparaître dans l'attribut approprié de la balise img lors de l'affichage des photos sur la fiche du restaurant.
+
