@@ -1,6 +1,7 @@
 <?php
+namespace App\Models;
 
-class Restaurant {
+class Restaurant extends Model {
     private $id;
     private $nom;
     private $adresse;
